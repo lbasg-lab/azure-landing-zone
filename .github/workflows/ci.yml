@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    uses: lbasg-lab/cicd-pipelines/.github/workflows/ci.yml@feature/terraform-ci
+    with:
+      config: .cicd-config.yml
+      
