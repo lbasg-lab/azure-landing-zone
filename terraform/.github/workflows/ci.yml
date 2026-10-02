@@ -11,3 +11,4 @@ jobs:
     uses: lbasg-lab/cicd-pipelines/.github/workflows/ci.yml@feature/terraform-ci
     with:
       config: .cicd-config.yml
+      
