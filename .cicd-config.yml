@@ -4,5 +4,9 @@ runtime:
   stack: terraform
   version: "1.16.2"
   working_directory: terraform
-  
+
+terraform:
+  organization: lbasg-lab
+  workspace: azure-landing-zone
+
 deployment: false
