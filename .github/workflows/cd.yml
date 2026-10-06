@@ -10,5 +10,6 @@ jobs:
     uses: lbasg-lab/cicd-pipelines/.github/workflows/cd.yml@feature/terraform-ci
     with:
       config: .cicd-config.yml
+      azure-subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
     secrets:
       HCP_TERRAFORM_TOKEN: ${{ secrets.HCP_TERRAFORM_TOKEN }}
