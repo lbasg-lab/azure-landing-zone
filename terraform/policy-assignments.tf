@@ -8,12 +8,17 @@ resource "azurerm_subscription_policy_assignment" "allowed_regions" {
   policy_definition_id = "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c"
 
   parameters = jsonencode({
+    effect = {
+      value = "Deny"
+    }
+
     listOfAllowedLocations = {
       value = [
         "spaincentral"
       ]
     }
   })
+
 }
 resource "azurerm_subscription_policy_assignment" "required_tags" {
   name                 = "required-tags"
