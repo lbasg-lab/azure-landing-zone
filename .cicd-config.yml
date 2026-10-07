@@ -9,7 +9,7 @@ terraform:
   organization: lbasg-lab
   workspace: azure-landing-zone
 
-deployment: false
+deployment: true
 
 target:
   platform: azure
