@@ -14,3 +14,5 @@ deployment: false
 target:
   platform: azure
   subscription_id: "9ebb47e5-4b79-4e48-8d87-4331f61578c4"
+  tenant_id: "8a049ff7-78fe-4526-b8cc-113cf6f5e527"
+  client_id: "c9e683fa-af32-4139-84dc-5ac3d7949bd3"
