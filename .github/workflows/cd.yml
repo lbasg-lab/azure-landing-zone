@@ -7,11 +7,11 @@ permissions:
 on:
   push:
     branches:
-      - feature/terraform-ci
+      - main
 
 jobs:
   cd:
-    uses: lbasg-lab/cicd-pipelines/.github/workflows/cd.yml@feature/terraform-ci
+    uses: lbasg-lab/cicd-pipelines/.github/workflows/cd.yml@v2.1.0
     with:
       config: .cicd-config.yml
     secrets:
