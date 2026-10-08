@@ -1,8 +1,11 @@
 name: CI
 
+permissions:
+  id-token: write
+  contents: read
+
 on:
   pull_request:
-  push:
     branches:
       - main
 
@@ -11,4 +14,5 @@ jobs:
     uses: lbasg-lab/cicd-pipelines/.github/workflows/ci.yml@v2.1.0
     with:
       config: .cicd-config.yml
-      
+    secrets:
+      HCP_TERRAFORM_TOKEN: ${{ secrets.HCP_TERRAFORM_TOKEN }}
